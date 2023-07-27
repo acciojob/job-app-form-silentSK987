@@ -3,11 +3,56 @@
 <html>
 
 <head>
+	<title>Job App Form</title>
 	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+ <form method="post">
+	<div>
+       <label for="name">Name:</label><br/>
+       <input type="text"id="name" name="username" placeholder="Name" required>
+    </div>
+	<br>
+	<div>
+        <lable for="email">Email:</lable><br/>
+        <input type="text"  id="email"name="email" placeholder="Email" required >
+    </div>
+	 <br>
+	<div>
+        <lable for="gender"> Gender:</lable> <br>
+        Male:<input type="radio" name="gender" required ><br/>
+        FeMale:<input type="radio" name="gender" required><br/><br/>
+    </div>
+	 
+	<div>
+        <label for="laptops">Laptop Brands:</label>
+        <select name="laptops" id="brand" width="100">
+            <option value="Apple">Apple</option>
+            <option value="Asus">Asus</option>
+            <option value="HP">HP</option>
+        </select>
+       </div>
+	 <div>
+        <lable for="age">Age:</lable><br/>
+        <input type="text" name="Age"  id="age"placeholder="Age" required >
+    </div>
+	<div>
+		<lable for="dob">DOB:</lable><br/>
+        <input type="date" id="dob" required><br/>
+	</div>
+	<div>
+        <lable for="password">password:</lable><br/>
+        <input type="password" name="password" id="pass" required><br/>
+       </div>
+	<div> 
+		<label for="submit">Submit</label><br>
+         <input type="submit" id="sub" value="Submit" ></input>
+          
+       </div>
+	</form>
+ 
     <script type="text/javascript" src="./script.js">
 </script>
 
