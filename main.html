@@ -1,58 +1,59 @@
+<!DOCTYPE html>
+ 
 <html>
-
+ 
 <head>
-	<title>Job App Form</title>
 	<link rel="stylesheet" href="styles.css">
 </head>
-
+ 
 <body>
-	<!-- the entire body must be written by student -->
- <form method="post">
-	<div>
-       <label for="name">Name:</label><br/>
-       <input type="text"id="name" name="username" placeholder="Name" required>
-    </div>
-	<br>
-	<div>
-        <lable for="email">Email:</lable><br/>
-        <input type="text"  id="email"name="email" placeholder="Email" required >
-    </div>
-	 <br>
-	<div>
-        <lable for="gender"> Gender:</lable> <br>
-        Male:<input type="radio" name="gender" required ><br/>
-        FeMale:<input type="radio" name="gender" required><br/><br/>
-    </div>
-
-	<div>
-        <label for="laptops">Laptop Brands:</label>
-        <select name="laptops" id="brand" width="100">
-            <option value="Apple">Apple</option>
-            <option value="Asus">Asus</option>
-            <option value="HP">HP</option>
-        </select>
-       </div>
-	 <div>
-        <lable for="age">Age:</lable><br/>
-        <input type="text" name="Age"  id="age"placeholder="Age" required >
-    </div>
-	<div>
-		<lable for="dob">DOB:</lable><br/>
-        <input type="date" id="dob" required><br/>
-	</div>
-	<div>
-        <lable for="password">password:</lable><br/>
-        <input type="password" name="password" id="pass" required><br/>
-       </div>
-	<div> 
-		<label for="submit">Submit</label><br>
-         <input type="submit" id="sub" value="Submit" ></input>
-
-       </div>
-	</form>
-
+	<!-- the entire body must be written by student -->	
+	<form id="my-form" method="post">
+		<div>
+			<label for="name">Name</label>
+			<input type="text" id="name" required>
+		</div>		
+		<div>
+			<label for="email">Email</label>
+			<input type="email" id="email" required>
+		</div>		
+		<div>
+			 <label for="gender_m">M</label>
+			  <input type="radio" id="gender_m" name="gender" required>
+			  <label for="gender">F</label>
+			  <input type="radio" id="gender_f" name="gender" required>
+		</div>		
+		<div>
+			<label for="laptop">Choose your laptop brand</label>
+			  <select name="laptop" id="laptop" required>
+				  <option>Apple</option>
+				  <option>Asus</option>
+				  <option>HP</option>
+			  </select>
+		</div>
+		<div>
+			 <label for="age">Age:</label>
+			 <input type="number" id="age" min="0" required>
+		</div>
+		<div>
+			 <label for="portfolio">Portfolio</label>
+			 <input type="url" name="portfolio" id="portfolio">
+		</div>
+		<div>
+			<label for="dob">DOB</label>
+			<input type="date" id="dob" required>
+		</div>
+		<div>
+			 <label for="password">Password</label>
+			 <input type="password" id="password" required>
+		</div>
+		<div>
+			<button type="submit">Submit</button>
+		</div>
+  </form> 
     <script type="text/javascript" src="./script.js">
 </script>
-
+ 
 </body>
+ 
 </html>
