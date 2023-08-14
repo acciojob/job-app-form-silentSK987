@@ -8,49 +8,32 @@
  
 <body>
 	<!-- the entire body must be written by student -->	
-	<form id="my-form" method="post">
-		<div>
-			<label for="name">Name</label>
-			<input type="text" id="name" required>
-		</div>		
-		<div>
-			<label for="email">Email</label>
-			<input type="email" id="email" required>
-		</div>		
-		<div>
-			 <label for="gender_m">M</label>
-			  <input type="radio" id="gender_m" name="gender" required>
-			  <label for="gender">F</label>
-			  <input type="radio" id="gender_f" name="gender" required>
-		</div>		
-		<div>
-			<label for="laptop">Choose your laptop brand</label>
-			  <select name="laptop" id="laptop" required>
-				  <option>Apple</option>
-				  <option>Asus</option>
-				  <option>HP</option>
-			  </select>
-		</div>
-		<div>
-			 <label for="age">Age:</label>
-			 <input type="number" id="age" min="0" required>
-		</div>
-		<div>
-			 <label for="portfolio">Portfolio</label>
-			 <input type="url" name="portfolio" id="portfolio">
-		</div>
-		<div>
-			<label for="dob">DOB</label>
-			<input type="date" id="dob" required>
-		</div>
-		<div>
-			 <label for="password">Password</label>
-			 <input type="password" id="password" required>
-		</div>
-		<div>
-			<button type="submit">Submit</button>
-		</div>
-  </form> 
+	<form method="POST">
+		<label for="name">Name*</label>
+		<input type="text" id="name" required><br><br>
+		<label for="email">Email*</label>
+		<input type="email" id="name" required><br><br>
+		<label for="M">M</label>
+		<input type="radio" id="M" name="gender" required>
+		<label for="F">F</label>
+		<input type="radio" id="F" name="gender" required><br><br>
+		<label for="laptop">Laptop Brands</label><br>
+		<select id="laptop">
+			<option>Apple</option>
+			<option>Asus</option>
+			<option>HP</option>
+		</select><br><br>
+		<label for="age">Age*</label>
+		<input type="number" id="age" required><br><br>
+		<label for="dob">Date of Birth*</label>
+		<input type="date" id="dob" required><br><br>
+		<label for="password">Password*</label>
+		<input type="password" id="password" required><br><br>
+		<label for="portfolio">Portfolio URL</label>
+		<input type="url" id="portfolio" name="portfolio">
+		<input type="button" value="Submit" name="Button">
+		
+	</form>
     <script type="text/javascript" src="./script.js">
 </script>
  
